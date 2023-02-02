@@ -37,24 +37,23 @@
                 <tbody>
                     
                     <tr>
-                        
-                        <td><label for="type"><b><i> Тип кузова </i></b> </label></td>
+                        <td><b><i> Тип кузова </i></b></td>
                         <td> 
-                            <p> <input id="type" type="checkbox" name="same" > Седан </p>
-                         <p> <input id="type" type="checkbox" name="same"> Кабріолет </p>
-                         <p> <input id="type" type="checkbox" name="same"> Універсал </p>
+                            <p> <input class="type" type="checkbox" name="same" > Седан </p>
+                         <p> <input class="type" type="checkbox" name="same"> Кабріолет </p>
+                         <p> <input class="type" type="checkbox" name="same"> Універсал </p>
                          
-                            <p><input id="type" type="checkbox" name="same" > Кросовер </p>
-                         <p> <input id="type" type="checkbox" name="same"> Хетчбек </p>
-                         <p> <input id="type" type="checkbox" name="same"> Купе </p>
+                            <p><input class="type" type="checkbox" name="same" > Кросовер </p>
+                         <p> <input class="type" type="checkbox" name="same"> Хетчбек </p>
+                         <p> <input class="type" type="checkbox" name="same"> Купе </p>
                         </td>
-                    </p>
+        
                     </tr>
                     <tr>
-                        <td><label for="mark"><b><i> Марка авто </i></b> </label></td>
+                        <td> <label for="mark"> <b><i> Марка авто </i></b> </label></td>
                         <td>
                             <p> 
-                                <select>
+                                <select name="mark" id="mark">
                                     <option value=""> Обрати </option>
                                     <option value=""> Audi </option>
                                     <option value=""> BMW </option>
@@ -67,10 +66,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="city"><b><i> Країна виробник </i></b> </label></td>
+                        <td><label for="city"><b><i> Країна виробник </i></b></label></td>
                         <td>
                             <p> 
-                                <select>
+                                <select name="city" id="city">
                                     <option value=""> Обрати </option>
                                     <option value=""> Німеччина  </option>
                                     <option value=""> Франція </option>
@@ -82,47 +81,47 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="price"> <b><i> Ціна </i></b> </label></td>
-                        <td> <input id="price" type="number" min="1800" max="600000000000000000" placeholder="Від" step="500">
-                            <input id="price" type="number" min="1800" max="600000000000000000" placeholder="До" step="500"></td>
+                        <td> <b><i> Ціна </i></b> </td>
+                        <td> <input  type="number" min="1800" max="600000000000000000" placeholder="Від" step="500">
+                            <input type="number" min="1800" max="600000000000000000" placeholder="До" step="500"></td>
                 </tr>
                 <tr>
-                    <td><label for="year"> <b><i> Рік випуску </i></b> </label></td>
-                    <td> <input id="year" type="number" min="1970" max="2023" placeholder="Від" step="1">
-                        <input id="year" type="number" min="1970" max="2023" placeholder="До" step="1"></td>
+                    <td> <b><i> Рік випуску </i></b></td>
+                    <td> <input  type="number" min="1970" max="2023" placeholder="Від" step="1">
+                        <input type="number" min="1970" max="2023" placeholder="До" step="1"></td>
             </tr>
             <tr>
                         
-                <td><label for="condition"><b><i> Стан авто </i></b> </label></td>
+                <td><label><b><i> Стан авто </i></b> </label> </td>
                 <td> 
-                    <p> <input id="condition" type="checkbox" name="same1" > Б/У  </p>
-                 <p> <input id="condition" type="checkbox" name="same1"> Нова </p>
-                 <p> <input id="condition" type="checkbox" name="same1"> Нерозмитнена </p>
-                    <p><input id="condition" type="checkbox" name="same1" > Розмитнена </p>
+                    <p> <input type="checkbox" name="same1" > Б/У  </p>
+                 <p> <input type="checkbox" name="same1"> Нова </p>
+                 <p> <input type="checkbox" name="same1"> Нерозмитнена </p>
+                    <p><input type="checkbox" name="same1" > Розмитнена </p>
                 </td>
-            </p>
+          
             </tr>
             <tr>
                         
-                <td><label for="petrol"><b><i> Тип палива </i></b> </label></td>
+                <td><b><i> Тип палива </i></b> </td>
                 <td> 
-                    <p> <input id="petrol" type="checkbox" name="petrol" > Газ </p>
-                 <p> <input id="petrol" type="checkbox" name="petrol"> Бензин </p>
-                 <p> <input id="petrol" type="checkbox" name="petrol"> Гібрід </p>
-                    <p><input id="petrol" type="checkbox" name="petrol" > Електро </p>
+                    <p> <input type="checkbox" name="petrol" > Газ </p>
+                 <p> <input type="checkbox" name="petrol"> Бензин </p>
+                 <p> <input type="checkbox" name="petrol"> Гібрід </p>
+                    <p><input type="checkbox" name="petrol" > Електро </p>
                 </td>
-            </p>
+            
             </tr> <tr>
                         
-                <td><label for="type1"><b><i> Тип коробки передач </i></b> </label></td>
+                <td><b><i> Тип коробки передач </i></b> </td>
                 <td> 
-                    <p> <input id="type1" type="checkbox" name="type1" checked > Автомат </p>
-                 <p> <input id="type1" type="checkbox" name="type1"> Механіка </p>
+                    <p> <input type="checkbox" name="type1" checked > Автомат </p>
+                 <p> <input type="checkbox" name="type1"> Механіка </p>
                 </td>
-            </p>
+            
             </tr>
             <tr>
-                <td><label for="color"><b><i> Колір </i></b> </label></td>
+                <td><b><i> Колір </i></b></td>
                 <td>
                     <p> 
                         <select>
@@ -138,17 +137,17 @@
             </tr>
             <tr>
                         
-                <td><label for="comfort"><b><i> Комфорт </i></b> </label></td>
+                <td><b><i> Комфорт </i></b></td>
                 <td> 
-                    <p> <input id="comfort" type="checkbox" name="comfort" > Шкіряний салон  </p>
-                 <p> <input id="comfort" type="checkbox" name="comfort"> Тканевий салон  </p>
-                 <p> <input id="comfort" type="checkbox" name="comfort"> Електрокермо  </p>
-                    <p><input id="comfort" type="checkbox" name="comfort" > Гідрокермо </p>
-                    <p> <input id="comfort" type="checkbox" name="comfort" > Електро-підйомник </p>
-                 <p> <input id="comfort" type="checkbox" name="comfort"> Ручний підйомник </p>
+                    <p> <input type="checkbox" name="comfort" > Шкіряний салон  </p>
+                 <p> <input type="checkbox" name="comfort"> Тканевий салон  </p>
+                 <p> <input type="checkbox" name="comfort"> Електрокермо  </p>
+                    <p><input type="checkbox" name="comfort" > Гідрокермо </p>
+                    <p> <input  type="checkbox" name="comfort" > Електро-підйомник </p>
+                 <p> <input type="checkbox" name="comfort"> Ручний підйомник </p>
 
                 </td>
-            </p>
+          
             </tr>
                 </tbody>
             </table>
